@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm -rf /NoWarDDoS
 mkdir -p /NoWarDDoS
 cd /NoWarDDoS
 

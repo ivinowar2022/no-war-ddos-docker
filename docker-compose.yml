@@ -2,7 +2,7 @@ version: '3.8'
 services:
   ddos:
     # Comment line below to not use pregenerated image
-    image: 'ivinowar2022/ddos:1.0'
+    image: 'ivinowar2022/ddos:1.1'
 
     # Uncomment to build local image
     #build: .
