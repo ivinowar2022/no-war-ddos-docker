@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  ddos:
+    # Comment line below to not use pregenerated image
+    image: 'ivinowar2022/ddos:1.0'
+
+    # Uncomment to build local image
+    #build: .
+
+    # Max connections per each replica/container
+    command: >
+      500
+    sysctls:
+      - net.core.somaxconn=1000
+      - net.ipv4.ip_local_port_range=10000 65535
+    restart: always
