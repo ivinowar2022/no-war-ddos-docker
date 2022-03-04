@@ -3,7 +3,7 @@ FROM python:slim
 
 RUN apt-get update \
   && apt-get install -y git \
-  && git clone https://github.com/AlexTrushkovsky/NoWarDDoS.git \
+  && git clone https://github.com/Luzhnuy/attacker.git /NoWarDDoS \
   && cd /NoWarDDoS \
   && pip install -r requirements.txt \
   && rm -rf /NoWarDDoS \
